@@ -1,92 +1,37 @@
 <!doctype html>
 <html class="h-100" lang="en">
-  
-  <!-- An HTML document always starts with a "head", i.e. information about the page that isn't directly visible -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Links to the CSS styles from Bootstrap. -->
-    <!-- -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- -->
-
-    <!-- Links to our additional CSS styles -->
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Iga Bykowska's Resumé</title>
   </head>
-  <!-- End of the head -->
-
-  <!-- Start of the body, which contains everything visible on the page -->
   <body class="d-flex flex-column h-100 justify-content-between">
-
-    <!--
-      We use a Bootstrap container to align contents.
-      The "container" class can be replaced by "container-fluid" to make a full width page.
-      The "my-sm-4" class adds a margin (m) vertical (y) at sizes small (-sm-) and above, of 4 x 6 pixels
-      The "resume-container" class doesn't come from Bootstrap, you can use it for your own styles
-    -->
+	  
+       <main class="col-md-7 col-lg-8 col-xl-9 resume-main">
     <div class="container shadow-lg my-sm-4 resume-container">
-
-      <!--
-        <header> is a semantic element: it works exactly like <div>, but it gives information about the role of the code below.
-        The "row" class is used for the Bootstrap grid.
-      -->
-  <header class="row resume-header justify-content-center">
-        <!--
-          A container to wrap around the portrait and align it. We use Bootstrap grid columns.
-          This constrains the portrait to columns of decreasing sizes
-        -->
-    <div class="portrait-container col-5 col-sm-4 col-md-3 col-lg-2">
-          <!--
-            "w-100" makes sure the image takes the full width of the column it's in
-            "rounded-circle" cuts a circle around the image
-          -->
+	  <header class="row resume-header justify-content-center">
+		  <div class="portrait-container col-5 col-sm-4 col-md-3 col-lg-2">
           <img class="w-100 rounded-circle my-3" src="images/iga-portrait.jpg" alt="Portrait of Firstname Lastname" width="160">
         </div>
-        <!--
-          A container to wrap around your name and tagline. Full-width at small size, then columns of increasing size.
-        -->
         <div class="col-12 col-sm-8 col-md-9 col-lg-10 my-3 header-content">
           <h1 class="display-2"><strong>IGA BYKOWSKA&nbsp;</strong></h1>
           <h5>CREATIVE BUSINESS STUDENT</h5>
     </div>
-      </header>
-
-      <!--
-        Another row in the Bootstrap grid, for the rest of the résumé.
-        Biography and other details will be on top of each other at sizes XS and S, then next to each other.
-        Use the "flex-row-reverse" class here to swap the columns around.
-      -->
       <div class="row resume-bottom">
-
-        <!--
-          <main> is another semantic element. It will contain biographical info (professional experience and education).
-        -->
         <main class="col-md-7 col-lg-8 col-xl-9 resume-main">
-
-          <!--
-            <section> is yet another semantic element. The first one is for professional experience.
-          -->
           <section class="my-3 biography-section">
             <h4 class="text-center">WORK EXPERIENCE</h4>
-            <!--
-              Each list item (li) in the unordered list (ul) below will be one job.
-              "list-unstyled" is a class that hides the bullet points of a list.
-            -->
-			 
   <ul class="biography-list list-unstyled"> 
-
 			   <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-					
                   <img class="biography-logo mw-100 d-block mx-auto" src="images/work-places/rhodos-restaurant.png" alt="Rhodos Restaurant logo" width="60">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h5><strong>Barmaid |</strong> Rhodos Restaurant, The Netherlands</h5>
 				  <h6>2023 &ndash; now</h6>
-                  <!-- Use the list below to talk about minors, exchanges, extra-curricular activities. -->
                 </div>
               </li>
 
@@ -98,7 +43,6 @@
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h5><strong>Pastry Baker | </strong>The Cake Room, The Netherlands</h5>
 				  <h6>2022 &dash; 2023</h6>
-                  <!-- Use the list below to talk about minors, exchanges, extra-curricular activities. -->
                 </div>
               </li>
 			  
@@ -108,9 +52,8 @@
                   <img class="biography-logo mw-100 d-block mx-auto" src="images/work-places/cfm.png" alt="CFM logo" width="60">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
-                  <h5><strong>Fashion Industry |</strong> CFM, Shenzez, China</h5>
+                  <h5><strong>Fashion Industry |</strong> CFM, Shenzen, China</h5>
 				  <h6>May &dash; August 2022</h6>
-                  <!-- Use the list below to talk about minors, exchanges, extra-curricular activities. -->
                 </div>
               </li>
 			  
@@ -122,7 +65,6 @@
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h5><strong>Solopreneur | </strong>Monka Pszenna's Cake Sell, Poland</h5>
 				  <h6>2019 &dash; 2023</h6>
-                  <!-- Use the list below to talk about minors, exchanges, extra-curricular activities. -->
                 </div>
               </li>
 			  
@@ -135,7 +77,6 @@
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h5><strong>Babysitter | </strong> Cornwall, UK</h5>
 				  <h6>July &dash; August 2021</h6>
-                  <!-- Use the list below to talk about minors, exchanges, extra-curricular activities. -->
                 </div>
               </li>
 			  
@@ -147,7 +88,6 @@
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h5><strong>Barista | </strong>Baklava Restaurant, Poland</h5>
 				  <h6>2019 &dash; 2021</h6>
-                  <!-- Use the list below to talk about minors, exchanges, extra-curricular activities. -->
                 </div>
               </li>
 			  
@@ -159,37 +99,26 @@
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h5><strong>Intern | </strong>Cake Atelier, Poland</h5>
 				  <h6>January &dash; March 2019</h6>
-                  <!-- Use the list below to talk about minors, exchanges, extra-curricular activities. -->
                 </div>
               </li>
-			  
-		
-				  
-          <!-- We're done with jobs, let's move on to schools -->
+          <section class="my-3 biography-section">
+            <h4 class="text-center">EDUCATION</h4>
+           <ul class="biography-list list-unstyled">
 
-        <section class="my-3 biography-section">
-  <h4 class="text-center">EDUCATION</h4>
-  <ul class="biography-list list-unstyled">
-    <li class="biography-item row mb-2">
-      <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-        <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/logo-buas.svg" alt="School logo" width="120">
-      </div>
-      <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
-        <h5><strong>2022 &ndash; 2026 | BA in Creative Business</strong></h5>
-        <h6><strong>Breda University of Applied Sciences</strong></h6>
-        <!-- List of details about the education -->
-        <ul class="biography-details list-unstyled">
-          <li>Class Representative</li>
-          <li>Founder &amp; Leader of the baking club "Trying Not to Burn the School"</li>
-          <li>Exchange at Kristiania University, Oslo</li>
-        </ul>
-      </div>
-    </li>
-  </ul>
-</section>
-
-
-              <!-- 2nd item in education -->
+            <li class="biography-item row mb-2">
+                <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/logo-buas.svg" alt="School logo" width="120">
+                </div>
+                <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
+                  <h5><strong>2022 &ndash; 2026 | BA in Creative Business</strong></h5>
+				  <h6><strong>Breda University of Applied Sciences</strong></h6>
+                  <ul class="biography-details list-unstyled">
+                    <li>Class Representative</li>
+                    <li>Founder &amp; Leader of the baking club "Trying Not to Burn the School"</li>
+                    <li>exchange at Kristiania University, Oslo</li>
+                  </ul>
+                </div>
+              </li>
               <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
                   <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/complex-school.png" alt="School logo" width="80">
@@ -206,8 +135,6 @@
               </li>
             </ul>
           </section>
-			
-			 
 			 <section class="my-3 biography-section">
   <h4 class= "text-center">CERTIFICATES</h4>
             <ul class="biography-list list-unstyled">
@@ -219,28 +146,10 @@
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
 				  <h6><strong>CAE C1 | </strong>Advanced English Certificate</h6>
-			
-
-          <!-- This is the end of the "Education" section -->
-
         </main>
-
-        <!--
-          We're done with the first column.
-          We now move on to the column with contact details, languages and other skills
-          <aside> is also a semantic element.
-        -->
         <aside class="col-md-5 col-lg-4 col-xl-3 resume-aside">
-
-          <!-- The first block will be contact details -->
           <section class="my-3 aside-section">
             <h4>CONTACT</h4>
-            <!--
-              A list of all your contact details.
-              There are more icons in the images/icons folder, have a look if you want to add your LinkedIn or TikTok profile.
-              Be careful and only put channels through which you really want to be contacted.
-              If your phone number is your personal one, you may want to remove it!
-            -->
             <ul class="contact-list list-unstyled">
               <li class="contact-item">
                 <a class="d-flex align-items-center" href="mailto:bykowska.iga@gmail.com" target="_blank">
@@ -263,17 +172,12 @@
 
             </ul>
           </section>
-
-          <!-- End of contact details, moving on to languages -->
-
           <section class="my-3 aside-section">
             <h4>LANGUAGES</h4>
-            <!-- Each item in the list is a language. Modify, add or remove depending on what you speak -->
             <ul class="language-list list-unstyled">
               <li class="language-item d-flex mb-1">
                 <h5 class="language-name w-50">Polish</h5>
                 <div class="language-level w-50 border border-info border-2 position-relative">
-                  <!-- The div below is a progress bar. Choose between w-25, w-50, w-75 and w-100 to show your level of fluency -->
                   <div class="language-progress position-absolute bg-warning h-100 w-100"></div>
                   <h6 class="position-absolute w-100 text-center top-0 py-1">Native</h6>
                 </div>
@@ -281,7 +185,6 @@
               <li class="language-item d-flex mb-1">
                 <h5 class="language-name w-50">English</h5>
                 <div class="language-level w-50 border border-info border-2 position-relative">
-                  <!-- The div below is a progress bar. Choose between w-25, w-50, w-75 and w-100 to show your level of fluency -->
                   <div class="language-progress position-absolute bg-warning h-100 w-75"></div>
                   <h6 class="position-absolute w-100 text-center top-0 py-1">C2</h6>
                 </div>
@@ -289,27 +192,21 @@
               <li class="language-item d-flex mb-1">
                 <h5 class="language-name w-50">Norwegian</h5>
                 <div class="language-level w-50 border border-info border-2 position-relative">
-                  <!-- The div below is a progress bar. Choose between w-25, w-50, w-75 and w-100 to show your level of fluency -->
                   <div class="language-progress position-absolute bg-warning h-100 w-25"></div>
                   <h6 class="position-absolute w-100 text-center top-0 py-1">A1/A2</h6>
                 </div>
               </li>
             </ul>
           </section>
-
-          <!-- End of contact details, moving on to other skills -->
-
           <section class="my-3 aside-section">
             <h4>SOFTWARES</h4>
 			  <div class="container text-center">
  			 <div class="row">
    			 <div class="col-4">
 			 <img class="biography-logo mw-100 d-block mx-auto" src="images/software-icons/adobe-ai.png" alt="Ai logo" width="40">
-
  		    </div>
  			   <div class="col-4">
  			 <img class="biography-logo mw-100 d-block mx-auto" src="images/software-icons/procreate.png" alt="Procreate logo" width="40">
-
  		    </div>
 				  <div class="col-4">
 			<img class="biography-logo mw-100 d-block mx-auto" src="images/software-icons/figma.png" alt="Figma logo" width="40">
@@ -319,9 +216,6 @@
          </div>
 			  
           </section>
-
-          <!-- End of other skills, moving on to interest and hobbies -->
-
           <section class="my-3 aside-section">
             <h4>SKILLS</h4>
             <h6>reflective / active listener / teamwork / attention to detail / strategic thinking </h6>
@@ -336,13 +230,11 @@
         </aside>
       </div>
   </div>
-
-    <!-- And now, a footer! -->
     <footer class="bg-dark mt-sm-5 py-4 text-light">
       <p class="container text-end">
         Created as part of the <a href="https://www.buas.nl/en/programmes/creative-business" target="_blank">Bachelor of Creative Business at Breda University of Applied Sciences.</a>
       </p>
     </footer>
-
+	  </main>
 </body>
 </html>
