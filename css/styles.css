@@ -1,28 +1,43 @@
 /* Use this file to use your own styles*/
 
 /* Import declaration to use Google Fonts - check https://fonts.google.com/ for details */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Styles for the body */
 
 body {
-	font-family: Lato, "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: normal;
 	color: #202030;
 	background-color: #f8f8fc;
 }
 
 /* Styles for custom classes in the document. (There are more, try to find them out!) */
 
+
+
+
+
 .resume-header {
-    background-color: #e0f0ff;
+    background-color: #FFFCF5;
+	text-align: left;
+	color: #3E3DCD;
+	
+	
+	
+	
 }
 
 .resume-main {
-	background-color: #fffefc;
+	background-color: #FFFCF5;
+	color: #3E3DCD;
 }
 
 .resume-aside {
-	background-color: #fff0e0;
+	background-color: #FFFCF5;
+	color: #3E3DCD;
 }
 
 /* Styles for lists in the document */
