@@ -58,6 +58,11 @@ body {
 	padding-left: 1em;
 }
 
+.language-progress{
+	
+	background-color: #E87272
+}
+
 /* Styles for contact icons */
 
 .contact-icon {
